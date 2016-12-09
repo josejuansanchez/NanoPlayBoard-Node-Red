@@ -26,3 +26,12 @@
 * **QoS Levels**: Adafruit IO MQTT API supports QoS level 0 (at most once) and 1 (at least once) only.
 * **Rate Limit**: 2 requests per second (or 120 requests within 60 seconds).
 * [Reference](https://learn.adafruit.com/adafruit-io/mqtt-api).
+
+## Example 2. How to publish weather data via Twitter
+
+* Upload [this sketch](02-temperature-twitter/arduino/readTemperature/readTemperature.ino) on your NanoPlayBoard.
+* Start Node-Red from your terminal with: `$ node-red`
+* Import [this flow](02-temperature-twitter/node-red/flow.json).
+
+![](02-temperature-twitter/screenshot/flow.png)
+
