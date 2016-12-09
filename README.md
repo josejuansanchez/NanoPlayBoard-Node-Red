@@ -18,8 +18,11 @@
 
 ### Connection details
 
-* Host: io.adafruit.com
-* Port: 1883 or 8883 (for SSL encrypted connection)
-* Username: your Adafruit account username (see the accounts.adafruit.com page here to find yours)
-* Password: your Adafruit IO key (click the AIO Key button on a dashboard to find the key)
+* **Host**: io.adafruit.com
+* **Port**: 1883 or 8883 (for SSL encrypted connection)
+* **Username**: your Adafruit account username (see the accounts.adafruit.com page here to find yours)
+* **Password**: your Adafruit IO key (click the AIO Key button on a dashboard to find the key)
+* **Topic**: (username)/feeds/(feed name or key)
+* **QoS Levels**: Adafruit IO MQTT API supports QoS level 0 (at most once) and 1 (at least once) only.
+* **Rate Limit**: 2 requests per second (or 120 requests within 60 seconds).
 * [Reference](https://learn.adafruit.com/adafruit-io/mqtt-api).
