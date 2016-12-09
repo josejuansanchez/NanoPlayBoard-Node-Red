@@ -13,6 +13,7 @@
 * Upload [this sketch](01-potentiometer-mqtt/arduino/read/read.ino) on your NanoPlayBoard.
 * Start Node-Red from your terminal with: `$ node-red`
 * Import [this flow](01-potentiometer-mqtt/node-red/flow.json).
+* The Adafruit IO dashboard is available [here](https://io.adafruit.com/josejuansanchez/nanoplayboard).
 
 ![](01-potentiometer-mqtt/screenshot/flow.png)
 
