@@ -1,0 +1,98 @@
+[
+    {
+        "id": "dc465336.d9c41",
+        "type": "serial in",
+        "z": "6c9d99cd.15b6d8",
+        "name": "",
+        "serial": "84d300e6.434f6",
+        "x": 130,
+        "y": 160,
+        "wires": [
+            [
+                "116af876.fcdb58"
+            ]
+        ]
+    },
+    {
+        "id": "ded2f3c1.9857f",
+        "type": "debug",
+        "z": "6c9d99cd.15b6d8",
+        "name": "",
+        "active": true,
+        "console": "false",
+        "complete": "false",
+        "x": 430,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "60e4b4b7.8d138c",
+        "type": "mqtt out",
+        "z": "6c9d99cd.15b6d8",
+        "name": "",
+        "topic": "josejuansanchez/feeds/potentiometer",
+        "qos": "0",
+        "retain": "",
+        "broker": "4a0f2bf3.282b34",
+        "x": 530,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "116af876.fcdb58",
+        "type": "delay",
+        "z": "6c9d99cd.15b6d8",
+        "name": "",
+        "pauseType": "rate",
+        "timeout": "30",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "2",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": true,
+        "x": 260,
+        "y": 260,
+        "wires": [
+            [
+                "60e4b4b7.8d138c",
+                "ded2f3c1.9857f"
+            ]
+        ]
+    },
+    {
+        "id": "84d300e6.434f6",
+        "type": "serial-port",
+        "z": "",
+        "serialport": "/dev/cu.wchusbserial1420",
+        "serialbaud": "9600",
+        "databits": "8",
+        "parity": "none",
+        "stopbits": "1",
+        "newline": "\\n",
+        "bin": "false",
+        "out": "char",
+        "addchar": false
+    },
+    {
+        "id": "4a0f2bf3.282b34",
+        "type": "mqtt-broker",
+        "z": "",
+        "broker": "io.adafruit.com",
+        "port": "1883",
+        "tls": "",
+        "clientid": "",
+        "usetls": false,
+        "compatmode": true,
+        "keepalive": "60",
+        "cleansession": true,
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": ""
+    }
+]
